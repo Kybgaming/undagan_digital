@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Mobile Legends Skins</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Glide.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-800 shadow-lg relative w-full">
+        <div class=" bg-blue-svelt mx-auto px-4 flex items-center justify-between py-4">
+            <div class="header-title text-white sm:text-sm text-2xl font-bold flex items-center">
+                Mobile Legends Bang-Bang
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="blue" class="bi bi-patch-check ml-2 text-blue-500" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                    <path d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622-.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911z" />
+                </svg>
+            </div>
+            <div class="block lg:hidden">
+                <button id="burger-menu" class="text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="hidden lg:block">
+                <!-- <ul class="flex space-x-4">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">Skins</a></li>
+                    <li><a href="#" class="text-white">Contact</a></li>
+                </ul> -->
+            </nav>
+        </div>
+        <div class="container mx-auto">
+            <div class="glide" id="banner-carousel">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="https://i.pinimg.com/736x/89/df/82/89df8212186799c50c4418db42ff3c1a.jpg?text=Slide+1" alt="Slide 1" class= " w-full h-auto">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="https://i.pinimg.com/564x/85/0a/21/850a213b21c1ea6f44f1c3726b9bc05d.jpg?text=Slide+2" alt="Slide 2" class="w-full h-auto">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="https://i.pinimg.com/564x/f8/bc/89/f8bc89cd77c4da640afa9711d3e6d59d.jpg?text=Slide+3" alt="Slide 3" class="w-full h-auto">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="content container mx-auto px-4 py-10">
+        <div class="text-center mb-8">
+            <h2 class="text-4xl mb-4 font-bold" style="font-family: 'Arial', sans-serif; background: linear-gradient(180deg, #030194, #7683e9); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" data-aos="fade-down">MOBILE LEGENDS BANG BANG</h2>
+            <p class="text-lg" style="font-family: 'Arial', sans-serif;">Claim your skins now and conquer the battlefield!</p>
+        </div>
+        <div class="text-center mb-8">
+            <div class="bg-gray-800 rounded-lg shadow-lg p-6 inline-block" data-aos="zoom-in">
+                <h3 class="text-2xl font-bold mb-4">Time Left to Claim Rewards:</h3>
+                <div id="countdown" class="countdown">00:00:00</div>
+            </div>
+        </div>
+        <div class="grid sm:grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="cards max-w-xs mx-auto bg-gray-800 border border-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105" data-aos="fade-up">
+                <img class="card-image-1" src="https://i.pinimg.com/564x/60/5e/39/605e39cea0550dedb1527c61d6697984.jpg" alt="Epic Skin">
+                <div class="cards-card">
+                    <h4 class="text-xl font-bold mb-2">Epic Skin Ling</h4>
+                    <p class="text-gray-400 text-base">Get this amazing skin and show your skills.</p>
+                    <button class="claim-btn mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600" data-skin="Hayabusa" data-image="https://i.pinimg.com/564x/60/5e/39/605e39cea0550dedb1527c61d6697984.jpg">Claim Now</button>
+                </div>
+            </div>
+            <div class="cards max-w-xs mx-auto bg-gray-800 border border-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105" data-aos="fade-up">
+                <img class="card-image" src="https://i.pinimg.com/564x/85/0a/21/850a213b21c1ea6f44f1c3726b9bc05d.jpg" alt="Legendary Skin">
+                <div class="cards-card">
+                    <h4 class="text-xl font-bold mb-2">Legendary Skin GatotKaca</h4>
+                    <p class="text-gray-400 text-base">Be legendary with this exclusive skin.</p>
+                    <button class="claim-btn mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600" data-skin="Hayabusa" data-image="https://i.pinimg.com/564x/85/0a/21/850a213b21c1ea6f44f1c3726b9bc05d.jpg">Claim Now</button>
+                </div>
+            </div>
+            <div class="cards max-w-xs mx-auto bg-gray-800 border border-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105" data-aos="fade-up">
+                <img class="card-image" src="https://i.pinimg.com/564x/f8/bc/89/f8bc89cd77c4da640afa9711d3e6d59d.jpg" alt="Seasonal Skin">
+                <div class="cards-card">
+                    <h4 class="text-xl font-bold mb-2">Seasonal Skin Hayabusa</h4>
+                    <p class="text-gray-400 text-base">Celebrate the season with this special skin.</p>
+                    <button class="claim-btn mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600" transition duration-300 claim-btn data-skin="Hayabusa" data-image="https://i.pinimg.com/564x/f8/bc/89/f8bc89cd77c4da640afa9711d3e6d59d.jpg">Claim</button>
+                </div>
+            </div>
+            <div class="cards max-w-xs mx-auto bg-gray-800 border border-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105" data-aos="fade-up">
+                <img class="card-image" src="https://i.pinimg.com/736x/89/df/82/89df8212186799c50c4418db42ff3c1a.jpg" alt="Epic Skin">
+                <div class="cards-card">
+                    <h4 class="text-xl font-bold mb-2">Epic Skin Yss</h4>
+                    <p class="text-gray-400 text-base">Get this amazing skin and show your skills.</p>
+                    <button class="claim-btn mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600" data-skin="Hayabusa" data-image="https://i.pinimg.com/736x/89/df/82/89df8212186799c50c4418db42ff3c1a.jpg">Claim Now</button>
+                </div>
+            </div>
+            <div class="cards max-w-xs mx-auto bg-gray-800 border border-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105" data-aos="fade-up">
+                <img class="card-image-1" src="https://i.pinimg.com/564x/52/ea/38/52ea38a5df9e21be503d843efb2704e1.jpg" alt="Epic Skin">
+                <div class="cards-card">
+                    <h4 class="text-xl font-bold mb-2">Epic Skin Brody</h4>
+                    <p class="text-gray-400 text-base">Get this amazing skin and show your skills.</p>
+                    <button class="claim-btn mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600" data-skin="Hayabusa" data-image="https://i.pinimg.com/564x/52/ea/38/52ea38a5df9e21be503d843efb2704e1.jpg">Claim Now</button>
+                </div>
+            </div>
+            <div class="cards max-w-xs mx-auto bg-gray-800 border border-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105" data-aos="fade-up">
+                <img class="card-image" src="https://i.pinimg.com/564x/1d/f0/99/1df09950b2895ca9a39465fcc247a697.jpg" alt="Legendary Skin">
+                <div class="cards-card">
+                    <h4 class="text-xl font-bold mb-2">Legendary Skin Chou</h4>
+                    <p class="text-gray-400 text-base">Be legendary with this exclusive skin.</p>
+                    <button class="claim-btn mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600" data-skin="Hayabusa" data-image="https://i.pinimg.com/564x/1d/f0/99/1df09950b2895ca9a39465fcc247a697.jpg">Claim Now</button>
+                </div>
+            </div>
+            <div class="cards max-w-xs mx-auto bg-gray-800 border border-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105" data-aos="fade-up">
+                <img class="card-image" src="https://i.pinimg.com/564x/a0/91/54/a091548adbfe8eb8bd3a378a94a4f8e5.jpg" alt="Seasonal Skin">
+                <div class="cards-card">
+                    <h4 class="text-xl font-bold mb-2">Seasonal Skin Chou</h4>
+                    <p class="text-gray-400 text-base">Celebrate the season with this special skin.</p>
+                    <button class="claim-btn mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600" data-skin="Hayabusa" data-image="https://i.pinimg.com/564x/a0/91/54/a091548adbfe8eb8bd3a378a94a4f8e5.jpg">Claim Now</button>
+                </div>
+            </div>
+            <div class="cards max-w-xs mx-auto bg-gray-800 border border-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105" data-aos="fade-up">
+                <img class="card-image" src="https://i.pinimg.com/564x/53/5b/a0/535ba0d455ae333dd53825b5c01054f9.jpg" alt="Epic Skin">
+                <div class="cards-card">
+                    <h4 class="text-xl font-bold mb-2">Epic Skin Lancelot</h4>
+                    <p class="text-gray-400 text-base">Get this amazing skin and show your skills.</p>
+                    <button class="claim-btn mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600" data-skin="Hayabusa" data-image="https://i.pinimg.com/564x/53/5b/a0/535ba0d455ae333dd53825b5c01054f9.jpg">Claim Now</button>
+                </div>
+            </div>
+            <div class="cards max-w-xs mx-auto bg-gray-800 border border-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105" data-aos="fade-up">
+                <img class="card-image-1" src="https://i.pinimg.com/564x/ed/3b/e2/ed3be206eff0675dc12a1fe6ef29a3c1.jpg" alt="Epic Skin">
+                <div class="cards-card">
+                    <h4 class="text-xl font-bold mb-2">Epic Skin Granger</h4>
+                    <p class="text-gray-400 text-base">Get this amazing skin and show your skills.</p>
+                    <button class="claim-btn mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600" data-skin="Hayabusa" data-image="https://i.pinimg.com/564x/ed/3b/e2/ed3be206eff0675dc12a1fe6ef29a3c1.jpg">Claim Now</button>
+                </div>
+            </div>
+            <div class="cards max-w-xs mx-auto bg-gray-800 border border-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105" data-aos="fade-up">
+                <img class="card-image" src="https://i.pinimg.com/564x/13/d0/64/13d0643f6e6c2b394b6d265149de30ea.jpg" alt="Legendary Skin">
+                <div class="cards-card">
+                    <h4 class="text-xl font-bold mb-2">Legendary Ski Beneddeta</h4>
+                    <p class="text-gray-400 text-base">Be legendary with this exclusive skin.</p>
+                    <button class="claim-btn mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600" data-skin="Hayabusa" data-image="https://i.pinimg.com/564x/13/d0/64/13d0643f6e6c2b394b6d265149de30ea.jpg">Claim Now</button>
+                </div>
+            </div>
+            <div class="cards max-w-xs mx-auto bg-gray-800 border border-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105" data-aos="fade-up">
+                <img class="card-image" src="https://i.pinimg.com/564x/bb/a8/58/bba858952e49f6289ed5201716623b82.jpg" alt="Seasonal Skin">
+                <div class="cards-card">
+                    <h4 class="text-xl font-bold mb-2">Seasonal Skin Franco</h4>
+                    <p class="text-gray-400 text-base">Celebrate the season with this special skin.</p>
+                    <button class="claim-btn mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600" data-skin="Hayabusa" data-image="https://i.pinimg.com/564x/bb/a8/58/bba858952e49f6289ed5201716623b82.jpg">Claim Now</button>
+                </div>
+            </div>
+            <div class="cards max-w-xs mx-auto bg-gray-800 border border-gray-700 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105" data-aos="fade-up">
+                <img class="card-image" src="https://i.pinimg.com/564x/63/89/0d/63890daa69151fd35fac4ea76d87c655.jpg" alt="Epic Skin">
+                <div class="cards-card">
+                    <h4 class="text-xl font-bold mb-2">Epic Skin Franco</h4>
+                    <p class="text-gray-400 text-base">Get this amazing skin and show your skills.</p>
+                    <button class="claim-btn mt-4 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600" data-skin="Hayabusa" data-image="https://i.pinimg.com/564x/63/89/0d/63890daa69151fd35fac4ea76d87c655.jpg">Claim Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-black py-4">
+        <div class="container mx-auto text-center">
+         <p>&copy; 2024 Mobile Legends. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Claim Modal -->
+ <!-- Modal -->
+<div id="claim-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50">
+<div class="bg-gray-800 rounded-lg shadow-lg p-6 w-full max-w-md">
+    <div id="confirmation-step">
+        <h3 class="text-2xl font-bold mb-4" id="skin-title"></h3>
+        <img id="skin-image" src="" alt="Skin Image" class="w-full h-64 object-cover rounded-lg mb-4">
+        <div class="flex justify-around mt-4">
+            <button id="confirm-claim" class="py-2 px-4 bg-green-600 rounded-md font-bold text-white hover:bg-green-700 transition duration-300">Confirm</button>
+            <button id="close-modal" class="py-2 px-4 bg-red-600 rounded-md font-bold text-white hover:bg-red-700 transition duration-300">Close</button>
+        </div>
+    </div>
+    <div id="form-step" class="hidden">
+        <form action="#" method="POST" class="space-y-4">
+            <div>
+                <label for="player-id" class="block text-sm font-medium">Mobile Legends ID:</label>
+                <input type="text" id="player-id" name="player-id" required class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium">Email Address:</label>
+                <input type="email" id="email" name="email" required class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <div>
+                <button type="submit" class="w-full py-2 px-4 bg-indigo-600 rounded-md font-bold text-white hover:bg-indigo-700 transition duration-300">Claim Now</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+    <!-- Glide.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new Glide('#banner-carousel', {
+                type: 'carousel',
+                perView: 1,
+                autoplay: 3000,
+                hoverpause: true,
+            }).mount();
+        });
+    </script>
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+const claimButtons = document.querySelectorAll('.claim-btn');
+const claimModal = document.getElementById('claim-modal');
+const skinTitle = document.getElementById('skin-title');
+const skinImage = document.getElementById('skin-image');
+const confirmClaim = document.getElementById('confirm-claim');
+const closeModal = document.getElementById('close-modal');
+const confirmationStep = document.getElementById('confirmation-step');
+const formStep = document.getElementById('form-step');
+
+claimButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const skinName = this.getAttribute('data-skin');
+        const skinImg = this.getAttribute('data-image');
+        skinTitle.textContent = `Claim ${skinName}`;
+        skinImage.src = skinImg;
+        confirmationStep.classList.remove('hidden');
+        formStep.classList.add('hidden');
+        claimModal.style.display = 'flex';
+    });
+});
+
+confirmClaim.addEventListener('click', function() {
+    // Handle confirmation logic here (if needed)
+    confirmationStep.classList.add('hidden');
+    formStep.classList.remove('hidden');
+});
+
+closeModal.addEventListener('click', function() {
+    claimModal.style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    if (event.target == claimModal) {
+        claimModal.style.display = 'none';
+    }
+});
+
+// Countdown timer
+const countdown = document.getElementById('countdown');
+const targetDate = new Date().getTime() + (24 * 60 * 60 * 1000); // 24 hours from now
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdown.textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+    if (distance < 0) {
+        clearInterval(timer);
+        countdown.textContent = '00:00:00';
+    }
+}
+
+updateCountdown();
+const timer = setInterval(updateCountdown, 1000);
+});
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerMenu = document.getElementById('burger-menu');
+            const nav = document.querySelector('nav');
+
+            burgerMenu.addEventListener('click', function() {
+                nav.classList.toggle('hidden');
+            });
+        }); 
+    </script>
+</body>
+</html>

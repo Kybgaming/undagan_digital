@@ -1,0 +1,108 @@
+body{
+    font-size: 30px;
+}
+#claim-modal { 
+    display: none;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:50px ;
+    z-index: 9999;
+}
+#claim-modal img{
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0px -30px;
+    border-radius: 8px;
+}
+#confirmation-step{
+    width: 80%;
+}
+.countdown {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.card-image {
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: -100px 0px;
+    
+}
+.cards h4{
+    font-size: 30px;
+}
+#skin-image {
+    margin: auto;
+    width: 50%; /* Sesuaikan lebar gambar */
+    height: auto; /* Atur tinggi sesuai proporsi gambar */
+    max-height: 300px; /* Contoh aturan untuk maksimum tinggi gambar */
+    object-fit: cover; /* Pastikan gambar tetap sesuai ukuran walaupun dimensinya berubah */
+    border-radius: 8px; /* Sudut bulatkan gambar */
+    object-position: 0px -30px;
+}
+.header-title svg {
+    margin-left: 0.5rem;
+}
+.header-title{
+    font-size: 30px;
+}
+.cards button{
+    border-radius: 50px ;
+}
+.content h2{
+    font-size: 60px;
+}
+.content p{
+    font-size: 25px;
+}
+.card-image-1{
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: -150px 0px;
+}
+.claim-btn{
+    left: 20%;
+    bottom: 2%;
+    position: absolute;
+    width: 60%; /* Agar tombol memenuhi lebar container */
+}
+.cards-card{
+padding: 20px 20px 100px 10px;
+}
+
+
+@media screen and (max-width: 640px) {
+body {
+
+font-size: 14px;
+}
+.content h2{
+    font-size: 20px;
+}
+.content p{
+    font-size: 15px;
+}
+.header-title{
+font-size: 14px;
+}
+.cards h4{
+font-size: 14px;
+}
+.card-image {
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: -100px 0px;
+    
+}
+}
